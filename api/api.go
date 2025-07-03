@@ -17,8 +17,8 @@ type CoinsBalanceResponse struct {
 }
 
 type Error struct {
-	Code    int    // Error code
-	Message string // Error message
+	Code    int // Error code
+	Message string
 }
 
 func writeError(w http.ResponseWriter, message string, code int) {
